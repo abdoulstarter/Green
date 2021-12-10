@@ -1,0 +1,35 @@
+<ion-content>
+  <div class="main_content_div">
+
+      <div class="upper_flex">
+        <ion-icon name="arrow-back-outline" class="back_btn" (click)="goBack()"></ion-icon>
+        <ion-label class="bold_lbl">Creer un compte</ion-label>
+
+        <ion-label class="simp_lbl"> Address Email</ion-label>
+        <ion-input type="text" placeholder="Entrez adresse">
+            <ion-icon name="mail-outline"></ion-icon>
+        </ion-input>
+
+        <ion-label class="simp_lbl">Creer un mot de passe</ion-label>
+        <ion-input type="text" placeholder="Creer un mot de passe">
+            <ion-icon name="mail-outline"></ion-icon>
+        </ion-input>
+
+        <ion-label class="simp_lbl">Remettre mot de passe</ion-label>
+        <ion-input type="text" placeholder="Remettre mot de passe">
+            <ion-icon name="mail-outline"></ion-icon>
+        </ion-input>
+
+        <div class="check_div">
+            <ion-checkbox slot="start" mode="md"></ion-checkbox>
+            <ion-label>I have read the <span>Termes de services.</span> </ion-label>
+        </div>
+        
+      </div>
+
+      <ion-button (click)="goToHome()" expand="block" shape="round">
+        Continue
+      </ion-button>
+
+  </div>
+</ion-content>
